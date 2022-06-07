@@ -1,5 +1,7 @@
 package com.bridgelabz.user;
 
+
+
 import java.util.regex.Pattern;
 
 public class UserValidation {

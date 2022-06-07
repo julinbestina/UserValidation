@@ -1,5 +1,6 @@
 package com.bridgelabz.user;
 
+
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -37,13 +38,16 @@ public class UserValidationTest {
     }
     @Test
     public void givenFirstName_WhenInValid_ShouldReturnFalse() {
-        boolean isValid = user.validateFirstName("JuLin");
+
+            boolean isValid = user.validateFirstName("JuLin");
+
         Assert.assertFalse(isValid);
     }
+
     @Test
     public void givenLastName_WhenInValid_ShouldReturnFalse() {
-        boolean isValid = user.validateLastName("bestinA");
-        Assert.assertFalse(isValid);
+            boolean isValid = user.validateLastName("bestinA");
+            Assert.assertFalse(isValid);
     }
     @Test
     public void givenEmail_WhenInValid_ShouldReturnFalse() {
