@@ -26,7 +26,7 @@ public class UserValidationTest {
 
     @Test
     public void givenMobile_WhenProper_ShouldReturnTrue() {
-        boolean isValid = user.validateMobile("91 9645285623");
+        boolean isValid = user.validateMobile("91 9645212823");
         Assert.assertTrue(isValid);
     }
 
@@ -34,5 +34,30 @@ public class UserValidationTest {
     public void givenPassword_WhenValid_ShouldReturnTrue() {
         boolean isValid = user.validatePassword("Bestina@5");
         Assert.assertTrue(isValid);
+    }
+    @Test
+    public void givenFirstName_WhenInValid_ShouldReturnFalse() {
+        boolean isValid = user.validateFirstName("JuLin");
+        Assert.assertFalse(isValid);
+    }
+    @Test
+    public void givenLastName_WhenInValid_ShouldReturnFalse() {
+        boolean isValid = user.validateLastName("bestinA");
+        Assert.assertFalse(isValid);
+    }
+    @Test
+    public void givenEmail_WhenInValid_ShouldReturnFalse() {
+        boolean isValid = user.validateEmail("abc()*@gmail.com");
+        Assert.assertFalse(isValid);
+    }
+    @Test
+    public void givenMobile_WhenImProper_ShouldReturnFalse() {
+        boolean isValid = user.validateMobile("91968645231");
+        Assert.assertFalse(isValid);
+    }
+    @Test
+    public void givenPassword_WhenInValid_ShouldReturnFalse() {
+        boolean isValid = user.validatePassword("shadow6");
+        Assert.assertFalse(isValid);
     }
 }
