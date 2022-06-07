@@ -32,7 +32,7 @@ public class UserValidationTest {
 
     @Test
     public void givenPassword_WhenValid_ShouldReturnTrue() {
-        boolean isValid = user.validatePassword("Bestin@9");
+        boolean isValid = user.validatePassword("Bestinaa");
         Assert.assertTrue(isValid);
     }
 }

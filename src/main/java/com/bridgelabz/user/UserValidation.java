@@ -20,6 +20,6 @@ public class UserValidation {
     }
 
     public boolean validatePassword(String password) {
-        return Pattern.matches("[a-zA-Z0-9@#$%^&-+=()]{8,}", password);
+        return Pattern.matches("[a-z0-9@#$%^&-+=()]*(?=.*[A-Z]).{8,}", password);
     }
 }
