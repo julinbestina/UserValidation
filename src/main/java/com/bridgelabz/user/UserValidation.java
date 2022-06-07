@@ -10,4 +10,7 @@ public class UserValidation {
     public boolean validateLastName(String lastName) {
         return Pattern.matches("^[A-Z]{1}[a-z]{2,}$", lastName);
     }
+    public boolean validateEmail(String email) {
+        return Pattern.matches("^[a-z]+([+-.]?[a-z0-9])*[@][0-9a-z]+([.][a-z]{2,3}){1,2}$",email);
+    }
 }
