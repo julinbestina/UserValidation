@@ -30,4 +30,9 @@ public class UserValidationTest {
         Assert.assertTrue(isValid);
     }
 
+    @Test
+    public void givenPassword_WhenValid_ShouldReturnTrue() {
+        boolean isValid = user.validatePassword("Bestin@9");
+        Assert.assertTrue(isValid);
+    }
 }
