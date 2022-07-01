@@ -45,7 +45,7 @@ public class ValidEmailTest {
     @Test
     public void givenEmail_WhenValid_ShouldReturnTrue() {
         UserValidation user = new UserValidation();
-        boolean email = user.validateEmail(this.mailToTest);
+        boolean email = user.validateEmail.test(this.mailToTest);
         Assert.assertEquals(this.expectedResult, email);
     }
 }
